@@ -7,7 +7,7 @@ namespace lib_repositorios.Implementaciones
     {
         private IConexion? IConexion = null;
         // El profe dice mejore las llaves
-        private string llave = "KJGjkhdjkfgkjf54fs65d4f65sd4f";
+        private string llave = "123456789ABC";
 
         public TokenAplicacion(IConexion iConexion)
         {
@@ -22,7 +22,7 @@ namespace lib_repositorios.Implementaciones
         public string Llave(Usuarios? entidad)
         {
             var usuario = this.IConexion!.Usuarios!
-                .FirstOrDefault(x => x.Nombre == entidad!.Nombre && 
+                .FirstOrDefault(x => x.Nombre == entidad!.Nombre &&
                                 x.Contraseña == entidad.Contraseña);
             if (usuario == null)
                 return string.Empty;

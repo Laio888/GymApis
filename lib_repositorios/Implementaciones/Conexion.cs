@@ -29,6 +29,7 @@ namespace lib_repositorios.Implementaciones
         public DbSet<Mensajes>? Mensajes { get; set; }
         public DbSet<Productos>? Productos { get; set; }
         public DbSet<VentaProducto>? VentasProducto { get; set; }
+        public DbSet<Auditorias>? Auditorias { get; set; }
 
     }
 }

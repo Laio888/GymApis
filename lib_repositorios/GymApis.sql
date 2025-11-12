@@ -161,3 +161,13 @@ CREATE TABLE VentasProducto (
     FOREIGN KEY (IdProducto) REFERENCES Productos(IdProducto)
 );
 GO
+
+-- 16. Auditorias
+CREATE TABLE Auditorias (
+    IdAuditoria INT PRIMARY KEY IDENTITY,
+    Fecha DATETIME NOT NULL,
+    Usuario NVARCHAR(100),
+    Accion NVARCHAR(100),
+    Tabla NVARCHAR(50),
+    IdRegistro INT
+);
